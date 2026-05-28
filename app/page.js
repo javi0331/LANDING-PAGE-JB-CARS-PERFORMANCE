@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
 import Services from '@/components/Services/Services';
+import Brands from '@/components/Brands/Brands';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,8 @@ export default function HomePage() {
         <About />
 
         <Services />
+
+        <Brands />
 
         <section
           id="contact"
