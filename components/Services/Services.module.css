@@ -1,0 +1,56 @@
+.services {
+  min-height: 100vh;
+
+  background: black;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8rem 2rem;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 2rem;
+}
+
+.card {
+  padding: 4rem;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(20px);
+
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  background: rgba(255,255,255,0.06);
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #888;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

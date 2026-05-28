@@ -8,8 +8,7 @@ export default function SmoothScroll({ children }) {
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,
-      wheelMultiplier: 0.9,
-      touchMultiplier: 1.6,
+      smoothTouch: false,
     });
 
     function raf(time) {
